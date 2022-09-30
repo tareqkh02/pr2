@@ -3,7 +3,7 @@ let close = document.getElementById('back')
 let add = document.getElementById('add')
 let remove = document.getElementById('remove')
 let hiden = document.getElementById('hidden')
-
+let txt = document.getElementById ('txt')
 
 open.onclick=function(){
     hiden.style.display= 'block';
@@ -23,6 +23,7 @@ add.onclick = function(){
   document.getElementById("hidden").classList.toggle("active");
   hiden.style.display= 'none';
   document.getElementById('right').style.height='400px';
+  txt.value = '';
 
 }
 
@@ -33,3 +34,4 @@ remove.onclick = function (){
     }
 
 }
+
